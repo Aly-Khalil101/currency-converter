@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/myFramework.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="mf-header-50prjs">
+      <div class="mf-container">
+        <h1>Currency Converter Application</h1>
+      </div>
+    </header>
+    <main>
+      <div class="mf-container">
+        <div class="convert-box">
+          <input type="number" class="amount" placeholder="Amount" />
+          <h3>From:</h3>
+          <select id="currency-from">
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="EGP">EGP</option>
+          </select>
+          <h3>To:</h3>
+          <select id="currency-to">
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="EGP">EGP</option>
+          </select>
+          <button
+            id="convert-btn"
+            class="mf-btn-press"
+            onclick="convertCurrency()"
+          >
+            Convert
+          </button>
+          <div class="convert-result"></div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
